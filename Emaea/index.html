@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    text-align: center;
+}
+
+h1{
+    color: #333;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    box-shadow: 21px 7px 5px 0px rgba(219,216,219,1);
+    height: -2000px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-placeholder{
+    background-color: #ddd;
+    border: 2px dashed #bbb;
+    padding: 40px;
+    color: #777;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.image-placeholder:hover{
+    background-color: #ccc;
+    border: 20px solid #aaa;
+}
+video{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 250px;
+    left: 1350px;
+}
+button{
+    width: 200px;
+    height: 200px;
+}
+button:hover{
+    background-color: #ccc;
+    border: 2px solid #aaa;
+}
+
+    </style>
+</head>
+<body>
+<button><a href="./ImgLook1.html">Видео</a></button>
+    <div class="container">
+        <h1>Галерея</h1>
+        <div class="gallery">
+            <div class="image-placeholder" id="img1"><a href="./tanki.html"><img src="./images/32eb6d4ef421e7164634416602c26fd4.png" width="300" height="300"></a></div>
+            <div class="image-placeholder" id="img2"><a href="./nigr.html"><img src="./images/depositphotos_11444452-stock-photo-muscular-black-man (1).jpg" width="300" height="300"></a></div>
+            <div class="image-placeholder" id="img3"><a href="./kirieshki.html"><img src="images/1d869b2b3dd6708797907863b7a86425.jpg" width="300" height="200"></div></a>
+            <div class="image-placeholder" id="img4"><a href="./shavuha.html"><img src="./images/images (5).jfif" width="300" height="200"></a></div>
+        </div>
+    </div>
+</body>
+</html>
